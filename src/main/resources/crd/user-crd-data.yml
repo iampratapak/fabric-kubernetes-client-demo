@@ -1,0 +1,28 @@
+apiVersion: nsc.com/v1
+kind: User
+metadata:
+  name: pratap-user
+spec:
+  name: Pratap A K
+  email: pratap.a.k@oracle.com
+  phone: 9611767675
+
+---
+apiVersion: nsc.com/v1
+kind: User
+metadata:
+  name: theju-user
+spec:
+  name: Theju B S
+  email: theju@mobileaspects.com
+  phone: 9999999999
+
+---
+apiVersion: nsc.com/v1
+kind: User
+metadata:
+  name: charan-user
+spec:
+  name: Charan B S
+  email: charan@gmail.com
+  phone: 8888888888190
