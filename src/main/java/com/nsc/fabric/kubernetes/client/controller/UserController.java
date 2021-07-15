@@ -37,6 +37,18 @@ public class UserController {
         return userOptional.orElseThrow(() -> new Exception("user not found"));
     }
 
+    /*
+    {
+        "metadata":{
+            "name" : "postman-user"
+        },
+        "spec":{
+            "name" : "Postman",
+            "email" : "postman@gmail.com",
+            "phone" : "1234567890"
+        }
+    }
+     */
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public User create(@RequestBody User user) {
         return userClient.inNamespace("pratap").create(user);
